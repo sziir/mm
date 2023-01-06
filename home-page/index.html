@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+    <script src="https://kit.fontawesome.com/5c2c0c4626.js" crossorigin="anonymous"></script>
+
+<body>
+    <nav class="navbar navbar-expand ">
+        <div class="container">
+            <div class=" search">
+                <form class="" role="search">
+                    <div class="search-feld">
+                        <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+                        <a href="">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </div>
+            
+                </form>
+                
+            </div>
+                <a href="#" class="logo">
+                    <img src="media/furnituer2.png" alt="">
+                </a>
+
+                <div class="" id="navbarSupportedContent">
+                    <ul class="navbar-nav d-flex mb-2 mb-lg-0 ">
+                        
+                        <li class="nav-item">
+                            <a class="nav-link active"  href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"  href="#">Basket</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Favorite</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Furniture</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+          
+        </div>
+
+    </nav>
+    <header>
+
+        <div class="container ">
+
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner ">
+                    <div class="carousel-item active">
+                        <img src="media/slider 1.jpg" class=" w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="media/slider 2.jpg" class=" w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="media/slider 3.jpg" class=" w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="trending ">
+            <div class="container">
+                <div class="img">
+                    <img src="media/furniture.png" alt="" class="">
+                </div>
+                
+                <h1>Trending</h1>
+                <div class="img-trending d-flex">
+                    <img src="media/trend 1.jpg " alt="">
+                    <img src="media/trend  2.jpg" alt="">
+                    <img src="media/trend 3.jpg" alt="">
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <button class="open-button" onclick="openForm()"><i class="fa fa-comments" aria-hidden="true"></i></button>
+        <div class="chat-popup" id="myForm">
+            <div class="chatHead">
+                <p class="chatName">Chat Name</p>
+                <button type="button" class="chatClose" aria-label="Close" onclick="closeForm()"><span
+                        aria-hidden="true">×</span></button>
+            </div>
+            <ol class="discussion">
+                <li class="other">
+                    <div class="avatar">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHTEFMnih7ZgOPIZej2dclAphUeOhVR1OIFaPoYCOqm9fY1Fv7" />
+                    </div>
+                    <div class="messages">
+                        <p>yeah, they do early flights cause they connect with big airports. they wanna get u to your
+                            connection</p>
+                        <time datetime="2009-11-13T20:00">Timothy • 51 min</time>
+                    </div>
+                </li>
+                <li class="self">
+                    <div class="avatar">
+                        <img src="https://amp.businessinsider.com/images/5947f16889d0e20d5e04b3d9-750-562.jpg" />
+                    </div>
+                    <div class="messages">
+                        <p>That makes sense.</p>
+                        <p>It's a pretty small airport.</p>
+                        <time datetime="2009-11-13T20:14">37 mins</time>
+                    </div>
+                </li>
+                <li class="other">
+                    <div class="avatar">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHTEFMnih7ZgOPIZej2dclAphUeOhVR1OIFaPoYCOqm9fY1Fv7" />
+                    </div>
+                    <div class="messages">
+                        <p>that mongodb thing looks good, huh?</p>
+                        <p>
+                            tiny master db, and huge document store</p>
+                    </div>
+                </li>
+            </ol>
+            <div class="chatBottom">
+                <input class="sentText" type="text" placeholder="Your Text"
+                    style="flex: 1;border: 1px solid #0374d8;border-radius: 20px;padding: 0 20px;"></input>
+                <button type="button" class="sendbtn" aria-label="Close"><span aria-hidden="true"><i class="fa fa-paper-plane-o"
+                            aria-hidden="true"></i></span></button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer">
+                <div class="icon">
+                    <i class="fa-brands fa-instagram "></i>
+                    <i class="fa-brands fa-snapchat"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="pay-icons">
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-apple-pay"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
